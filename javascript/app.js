@@ -10,7 +10,7 @@ while (arr.length !== 10) {
     arr.push(random)
   }
 }
-console.log(arr);
+// console.log(arr);
 
 for (let i = 1; i <= 10; i++) {
   const tr = document.createElement('tr')
@@ -23,7 +23,7 @@ for (let i = 1; i <= 10; i++) {
 }
 
 const allItems = document.querySelectorAll('td')
-console.log(arr);
+// console.log(arr);
 for (let i = 0; i < allItems.length; i++) {
   allItems[i].addEventListener('click', function () {
     if (arr.includes(i)) {
