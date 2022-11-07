@@ -22,6 +22,7 @@ body {
 }
 
 a {
+    color: white;
     text-decoration: none;
 }
 
@@ -46,6 +47,7 @@ a {
     font-weight: bolder;
     letter-spacing: 2px;
     padding: 1rem 3rem;
+    color: white;
     border: none;
     border-radius: 3px;
     background-color: green;
@@ -58,11 +60,13 @@ a {
 
 @keyframes button-mover {
     0% {
+        color: white;
         background-color: green;
         transform: scale(1);
     }
 
     100% {
+        color: white;
         background-color: green;
         transform: scale(1.1);
     }
