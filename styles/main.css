@@ -28,6 +28,10 @@ a {
   font-family: 'Chakra Petch', sans-serif;
 }
 
+.title {
+  font-size: 2rem;
+}
+
 table {
   border-radius: 3px;
 }
@@ -132,4 +136,19 @@ table td:active {
 .time-wrap {
   margin-bottom: .7rem;
   color: black;
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  table td {
+    width: 25px;
+    height: 25px;
+  }
 }
