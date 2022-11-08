@@ -58,7 +58,7 @@ table td:active {
   background-color: red;
 }
 
-#green {
+#green-title {
   color: green;
 }
 
@@ -136,6 +136,32 @@ table td:active {
 .time-wrap {
   margin-bottom: .7rem;
   color: black;
+}
+
+.scores {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.green-score {
+  color: green;
+}
+
+.red-score {
+  color: red;
+}
+
+/*RESPONSIVE DESIGN FOR SMARTPHONES*/
+@media screen and (max-width: 1440px) {
+  .scores {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 520px) {
