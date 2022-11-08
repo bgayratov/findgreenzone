@@ -173,4 +173,7 @@ table td:active {
     width: 35px;
     height: 35px;
   }
+  .scores {
+    width: 80%;
+  }
 }
