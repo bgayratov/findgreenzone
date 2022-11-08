@@ -143,12 +143,8 @@ table td:active {
     font-size: 12px;
   }
 
-  .wrapper {
-    width: 90%;
-  }
-
   table td {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
   }
 }
