@@ -51,15 +51,13 @@ table td:active {
 }
 
 .green {
+  background-image: url('../images/diamond.png');
   background-color: green;
 }
 
 .red {
+  background-image: url('../images/bomb.png');
   background-color: red;
-}
-
-#green-title {
-  color: green;
 }
 
 /* MODAL PANEL */
@@ -92,6 +90,7 @@ table td:active {
 .modal-title {
   font-size: 26px;
   font-weight: bold;
+  font-family: 'Chakra Petch', sans-serif;
   margin-bottom: 18px;
 }
 
@@ -100,6 +99,7 @@ table td:active {
   border: transparent;
   border-radius: 6px;
   font-family: 'Chakra Petch', sans-serif;
+  font-weight: bolder;
   color: white;
   background-color: green;
   animation-name: button-mover;
@@ -173,6 +173,7 @@ table td:active {
     width: 35px;
     height: 35px;
   }
+
   .scores {
     width: 80%;
   }

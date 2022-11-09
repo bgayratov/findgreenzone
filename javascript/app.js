@@ -3,6 +3,8 @@ const arr = []
 const modal = document.querySelector('.modal')
 const restartBtn = document.querySelector('.restart-btn')
 const timeText = document.querySelector('.time-text')
+const scoreGreenText = document.querySelector('.green-score')
+const scoreRedText = document.querySelector('.red-score')
 
 while (arr.length !== 10) {
   let random = Math.floor(Math.random() * 100)
@@ -23,13 +25,24 @@ for (let i = 1; i <= 10; i++) {
 }
 
 const allItems = document.querySelectorAll('td')
-// console.log(arr);
+
 for (let i = 0; i < allItems.length; i++) {
   allItems[i].addEventListener('click', function () {
     if (arr.includes(i)) {
       allItems[i].classList.add('green')
     } else {
       allItems[i].classList.add('red');
+    }
+
+    let greenCount = document.querySelectorAll('.green').length
+    let redCount = document.querySelectorAll('.red').length
+    scoreGreenText.textContent = greenCount
+    scoreRedText.textContent = redCount
+
+    if (greenCount == 10) {
+      document.querySelector('.modal-title').textContent = 'YOU WON!'
+      document.querySelector('.modal-btn').textContent = 'RESTART'
+      modal.classList.add('modal-open')
     }
   })
 }
@@ -47,6 +60,6 @@ setInterval(() => {
   modal.classList.add('modal-open')
 }, 1000 * 30)
 
-restartBtn.addEventListener('click', function() {
+restartBtn.addEventListener('click', function () {
   window.location.reload()
 })
