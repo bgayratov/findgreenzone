@@ -36,6 +36,11 @@ table {
   border-radius: 3px;
 }
 
+.game-name {
+  display: none;
+  color: #fff;
+}
+
 table td {
   width: 50px;
   height: 50px;
@@ -51,12 +56,16 @@ table td:active {
 }
 
 .green {
-  background-image: url('../images/diamond.png');
   background-color: green;
 }
 
+#green {
+  color: green;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
 .red {
-  background-image: url('../images/bomb.png');
   background-color: red;
 }
 
@@ -172,6 +181,12 @@ table td:active {
   table td {
     width: 35px;
     height: 35px;
+  }
+
+  .game-name {
+    display: block;
+    font-size: 6rem;
+    font-weight: bold;
   }
 
   .scores {
